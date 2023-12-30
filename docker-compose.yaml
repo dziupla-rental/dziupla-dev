@@ -1,14 +1,21 @@
 services:
   web:
-    build: ../dziupla-app
+    container_name: dziupla-web
+    build: 
+      context: ../dziupla-app
+      args:
+        build_env: development
     ports:
       - "80:80"
   backend:
+    container_name: dziupla-backend
     build: ../dziupla-back
     ports:
       - "8001:8001"
   db:
+    container_name: dziupla-db
     image: mysql:5.7
+    platform: linux/x86_64
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: dziupla
