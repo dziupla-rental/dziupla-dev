@@ -21,6 +21,6 @@ git clone git@github.com:dziupla-rental/dziupla-app.git
 ### Deployment
 To deploy the development server, first navigate into the **dziupla-dev** folder. From it, run the following command:
 ```bash
-docker-compose up -d
+docker-compose up -d --build
 ```
 There you go! Several docker images will be up and running, you can try and access the server at http://127.0.0.1/
