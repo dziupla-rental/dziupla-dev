@@ -23,4 +23,4 @@ To deploy the development server, first navigate into the **dziupla-dev** folder
 ```bash
 docker-compose up -d --build
 ```
-There you go! Several docker images will be up and running, you can try and access the server at http://127.0.0.1/
+There you go! Several docker images will be up and running, you can try and access the server at http://dziupla.local/
